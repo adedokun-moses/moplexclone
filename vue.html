@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Vue Lesson</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+</head>
+
+<body>
+    <h1>Hello Vue.</h1>
+
+   
+    <div id="app">
+
+
+        <div v-if = "showBooks" class="obook">
+            <ul>
+                <li v-for = "book in filteredBooks"  :class ="{ fav: book.isfav}" @click = "changecolor(book)" >
+                    <img :src="book.img" :alt="book.title">
+                    <h3>{{book.title}}</h3>
+                    <p>{{ book. author }}</p>
+                </li>
+            </ul>
+
+
+        </div>
+
+        <button @click = "toggleshow">
+            <span v-if ="showBooks">Hide Books</span>
+            <span v-else>Show Books</span>
+         <!--    <span v-if ="!showBooks">Show Books</span> -->
+        </button>
+
+
+
+        <div v-show = "showBooks">Currently showing Books</div>
+
+
+<!-- 
+        Data Binding -->
+
+       <!--  <a v-bind:href="url">welcome to koboinfo</a> -->
+        
+     <!--    <button v-on:click ="age++">Increase Age</button>
+        <button @click ="age--">Decreacess Age</button>
+        <div @click="changeTitle('New title') ">Click Here To Change Ttile</div> -->
+
+
+        <br>
+        <div class="box" @mouseover = "handleevent ($event, 5)">1</div>
+        <div class="box" @mouseleave = "handleevent" >2</div>
+        <div class="box" @dblclick ="handleevent">3</div>
+        <div class="box" @mousemove = "handlemousemove" >{{ x }} {{ y }}</div>
+      
+
+    </div>
+
+
+    <style>
+        button{
+            background: red;
+            padding: 10px 10px;
+        }
+
+        .box{
+            width: 40%;
+            margin: auto;
+            background: grey;
+            height: 150px;
+            margin: 10px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        .obook ul{
+            list-style: none;
+        }
+
+        .obook li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100px;
+            width: 50%;
+            margin: auto;
+        }
+        li.fav{
+            background: grey;
+            color: white;
+            border-radius: 10px;
+        }
+    </style> 
+</body>
+<script src="app.js"></script>
+
+</html>

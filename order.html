@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moplex</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="mobliemen">
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+
+            </a>
+        </div>
+
+        <div class=" child logo">
+            <h5><span class="m_design">m</span>MORPLEX</h5>
+
+        </div>
+        <div class="  nav_identifier">
+            <h4>Dashboard</h4>
+        </div>
+
+        <div class=" user_icon">
+
+            <div class="profile_view">
+
+            <!--   <i class="fa fa-bell fa-1x notify_icon "> -->
+                <img src="./image1.png" alt="profile picture">
+
+                <div class="dropdown" >
+                    <i class="fa fa-arrow-circle-o-down dropbtn"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Profile</a>
+                        <a href="#">Log Out</a>
+                       
+                    </div>
+                </div>
+
+              
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="main_container">
+        <div class="nav_col" id="myLinks">
+
+
+            <div class="navigation">
+                <div class="logo mobile_logo">
+                    <h5><span class="m_design">m</span></h5>
+
+                </div>
+                <ul>
+                    <li class="active first_nav" ><a href="dashboard.html" ><i
+                                class=" fa fa-bell icons"></i>DASHBOARD</a></li>
+                </ul>
+                <ul>
+                    <li><a href="userreg.html"><i class="fa fa-user icons"></i>USERS</a></li>
+                </ul>
+                <ul>
+                    <li><a href="order.html" class="active"><i class="fa fa-cart-plus icons"></i>ORDERS</a></li>
+                </ul>
+                <ul>
+                    <li><a href="wallet.html"><i class="fa fa-credit-card icons"></i>WALLET</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#" id="myBtn_help"><i class="fa fa-phone icons"></i>HELP</a></li>
+                </ul>
+                <ul>
+                    <li><a href="settings.html"><i class="fa fa-key icons"></i>SETTINGS</a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><i class="fa fa-key icons"></i>Log Out</a></li>
+                </ul>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="welcome_dash">
+
+            <div class="order_">
+
+                <div class="order_form">
+                   <h5>  <a href="order.html" class="active">Decoder</a> <span class="voucher_space"> <a href="orders2.html">Voucher</a></span></h5>
+                    <div class="_width"></div>
+
+                    <form action="" class="new_order_form">
+                        <h4>Purchase Details</h4>
+                        <div class="items_list">
+                            <div class="item_list_1">
+                                <label for="">Items</label>
+                                <input type="text" placeholder="Moplex Decoder">
+                            </div>
+
+                            <div class="items_list_2">
+                                <label for="">Quantity</label> 
+                                <input type="number" placeholder="01">
+                            </div>
+
+                        </div>
+
+
+
+                        <label for="phone"> Phone Number</label>
+                        <input type="text" placeholder="030022993030" class="new_order_form_new">
+                        <label for="email">Email Address</label>
+                        <input type="email" placeholder="asjjsj@gmail.com" class="new_order_form_new">
+                        <label for="address">Delivery Address</label>
+                        <input type="text" placeholder="Address" class="new_order_form_new">
+
+                        <div class="items_list_country">
+                            <div>
+                                <label for="">Country</label> 
+                                <input type="text" placeholder="Nigeria">
+
+                            </div>
+
+                            <div>
+                                <label for="">State</label> 
+                                <input type="text" placeholder="01">
+
+                            </div>
+
+                            <div>
+                                <label for="">City</label> 
+                                <input type="text" placeholder="01">
+                            </div>
+
+
+
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+                <div>
+                    <div class="amount_details">
+                 
+                        <h5 style="padding-top: 40px;">Order Amount <span class="amount_det_1">N682.5</span></h5>
+                        <h5> Discount <span class="amount_det_1">N682.5</span></h5>
+                        <h5>Total <span class="amount_det_1">N682.5</span></h5>
+                        <input type="submit" value="Proceed To Checkout" id="chechkout">
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- The Modal -->
+    <div id="myModal_order" class="modal"> 
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <h5>Checkout</h5>
+            <span class="close">&times;</span>
+            <div class="new_modal">
+                <div class="_wallet_choice">
+
+                    <p>Subscription Options</p>
+                    <div class="_wallet_1_choice">
+                        <input type="checkbox" name="vehicle1" value="Bike"> <span style="font-size: 10px; ">Use
+                            Wallet</span>
+                        <br>
+
+                    </div>
+                    <div class="_wallet_1_choice">
+                        <input type="checkbox" name="vehicle1" value="Bike"> <span style="font-size: 10px;"> Debit
+                            Card</span>
+                        <br>
+
+                    </div>
+
+                </div>
+                <div class="_wallet_choice_2">
+                    <p>Order Summary</p>
+
+                    <div class="order_summary_details">
+                        <div class="decoder">
+                            <h4>Item Morplex Decoder</h4>
+                            <div class="dec_line"></div>
+                        </div>
+                        <h3>Total Due <span class="total_det">N8800</span></h3>
+                        <div class="dec_line"></div>
+
+                        <h5>The amount will be deducted from your <br> wallet balance</h5>
+                        <input type="submit" value="Pay Now" id="paynow">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Trigger/Open The Modal -->
+    <!--  <button>Open Modal</button> -->
+
+    <!-- The Modal -->
+    <div id="mysecondModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content_2">
+            <span class="closes">&times;</span>
+
+            <i class="fa fa-bell fa-3x" style="margin-top: 50px"></i>
+            <h5>Order Complete</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime harum molestiae enim. Recusandae tempora
+            </p>
+            <input type="submit" value="Done">
+
+
+        </div>
+    </div>
+
+
+
+
+    
+    <div id="help_modal_" class="modal">
+
+        <!-- Modal content -->
+        <div class="help_modal">
+            <span class="close_help">&times;</span>
+            <h5>Need Help?</h5>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque autem nam, hic modi consectetur
+            </span>
+            <div class="help_modal_cont">
+                <div>
+
+                    <i class="fa fa-user"></i>
+                </div>
+                <div>
+                    <a href="#" id="myBtn_help_second">
+                        <h5>Apply for exchange rate <br> You will be matched with a dealer near you</h5>
+                    </a>
+                   
+                </div>
+            </div>
+
+            <div class="help_modal_cont">
+                <div>
+
+                    <i class="fa fa-github"></i>
+                </div>
+                <div>
+
+                    <h5>Send Us an Email <br> You will get a message within 24 hours</h5>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="mysecond_help_Modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="help_modal">
+            <span class="closes_help_2">&times;</span>
+            <h5>Order Help?</h5>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque autem nam, hic modi consectetur
+            </span>
+            <div class="help_modal_cont">
+                <div>
+
+                    <i class="fa fa-user"></i>
+                </div>
+                <div>
+                    <!-- 
+                    <button  id="myBtn_help">Open</button> -->
+                    <a href="#" >
+                        <h5>Apply for exchange rate <br> You will be matched with a dealer near you</h5>
+                    </a>
+                </div>
+            </div>
+
+            <div class="help_modal_cont">
+                <div>
+
+                    <i class="fa fa-github"></i>
+                </div>
+                <div>
+
+                    <h5>Send Us an Email <br> You will get a message within 24 hours</h5>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+ <script>
+    //Modal For Payment starts here
+
+    // Get the modal
+    var modal_new = document.getElementById("myModal_order");
+
+    // Get the button that opens the modal
+    var new_btn = document.getElementById("chechkout");
+
+    // Get the <span> element that closes the modal
+    var span_1 = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    new_btn.onclick = function () {
+        modal_new.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span_1.onclick = function () {
+        modal_new.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal_new.style.display = "none";
+        }
+    }
+
+
+
+    //Second Modal For Payment 
+
+    // Get the modal
+     var newmodal = document.getElementById("mysecondModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("paynow");
+
+    // Get the <span> element that closes the modal
+    var span1 = document.getElementsByClassName("closes")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+        newmodal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span1.onclick = function () {
+        newmodal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            newmodal.style.display = "none";
+        }
+    }
+
+ 
+
+
+
+  //Modal For Payment ends here
+
+
+</script>
+
+
+
+
+
+<script>
+
+    // Help Modal starts here
+   // Get the modal
+    var help_modal = document.getElementById("help_modal_");
+
+    // Get the button that opens the modal
+    var help_btn = document.getElementById("myBtn_help");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close_help")[0];
+
+    // When the user clicks on the button, open the modal
+    help_btn.onclick = function () {
+        help_modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        help_modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == help_modal) {
+            help_modal.style.display = "none";
+        }
+    };
+
+
+
+    // Get the modal
+    var help_modal_2 = document.getElementById("mysecond_help_Modal");
+
+    // Get the button that opens the modal
+    var btn_modal_2 = document.getElementById("myBtn_help_second");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("closes_help_2")[0];
+
+    // When the user clicks on the button, open the modal
+    btn_modal_2.onclick = function () {
+        help_modal_2.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        help_modal_2.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == help_modal_2) {
+            help_modal_2.style.display = "none";
+        }
+    };  
+
+
+      // Help Modal ends here
+</script> 
+
+
+
+<script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+<script src="new.js"></script>
+
+</html>

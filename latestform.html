@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moplex</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="description">
+            <h5>m</h5>
+
+            <div class="header details_group">
+                <h4>Dealers Sign Up</h4>
+                <ul>
+                    <li class="active form_1_progessbar">
+                        <div>
+                            <p>Personal Details <br> <span class="more_details">Provide Your namea and other
+                                    details</span> </p>
+                        </div>
+                    </li>
+                    <li class="form_2_progessbar">
+                        <div>
+                            <p>Business Details <br> <span class="more_details">Provide Your namea and other
+                                    details</span> </p>
+                        </div>
+                    </li>
+                    <li class="form_3_progessbar">
+                        <div>
+                            <p>Set Password <br> <span class="more_details">Provide Your namea and other details</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="details">
+
+            <div class="wrapper">
+
+                <div class="form_wrap">
+
+                    <form action="" class="form_details form_1">
+                        <h5>Personal Details</h5>
+                        <div class="names">
+                            <div style="float: left;">
+                                <label for="">First Name</label><br>
+                                <input type="text" placeholder="Adedokun" id="fname">
+                            </div>
+                            <div style="float: right; ">
+                                <label for="">Last Name</label><br>
+                                <input type="text" placeholder="Moses" id="lname">
+
+                            </div>
+                        </div>
+
+                        <div class="other_details">
+                            <label for="phonenumber"> Phone Number</label>
+                            <input type="text" placeholder="9092299282" id="num">
+                        </div>
+                        <div class="other_details">
+                            <label for="phonenumber">Email</label>
+                            <input type="email" placeholder="adedded@gmail.com" id="mail">
+                        </div>
+
+                        <input type="button" value="Next" class="submit_btn form_1_btns">
+
+
+                    </form>
+
+
+
+                    <form action="" class="form_details_sign form_2" style="display: none;">
+                        <h5>Business Information</h5>
+
+                        <div class="other_details2">
+                            <label for="phonenumber">Business Name </label>
+                            <input type="text" placeholder="9092299282">
+                        </div>
+
+                        <div class="other_details2">
+                            <label for="phonenumber"> CAC Number</label>
+                            <input type="text" placeholder="9092299282">
+                        </div>
+                        <div class="other_details2">
+                            <label for="phonenumber">Office Number</label>
+                            <input type="text" placeholder="adedded@gmail.com">
+                        </div>
+                        <div class="other_details2">
+                            <label for="phonenumber">Other Address</label>
+                            <input type="text" placeholder="adedded@gmail.com">
+                        </div>
+
+
+                        <div class="names1">
+                            <div class="names1_details">
+                                <label for="">Country</label>
+                                <input type="text" placeholder="Adedokun">
+                            </div>
+
+                            <div class="names1_details">
+                                <label for="">State</label>
+                                <input type="text" placeholder="Moses">
+                            </div>
+
+                            <div class="names1_details">
+
+                                <label for="">City</label><br>
+                                <input type="text" placeholder="Moses">
+                            </div>
+
+
+
+                        </div>
+                        <div>
+                            <input type="button" value="Next" class="submit_btn2 form_2_btns">
+                        </div>
+
+
+                    </form>
+
+                    <form action="" class="form_details form_3" style="display: none;">
+                        <h5>Change Password</h5>
+                        <div class="passowrd_log">
+                            <div class="_password_1">
+                                <label for="">Password</label>
+                                <input type="password" placeholder="*****">
+                            </div>
+                            <div class="_password_2">
+                                <label for="">Confirm Password</label>
+                                <input type="text" placeholder="******">
+                            </div>
+
+
+                        </div>
+
+                        <input type="submit" value="Next" class="submit_btn form_3_btns">
+
+                    </form>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+</body>
+
+<script>
+    var form_1 = document.querySelector(".form_1");
+    var form_2 = document.querySelector(".form_2");
+    var form_3 = document.querySelector(".form_3");
+
+
+    var form_1_btns = document.querySelector(".form_1_btns");
+    var form_2_btns = document.querySelector(".form_2_btns");
+    var form_3_btns = document.querySelector(".form_3_btns");
+
+
+
+    var form_2_progessbar = document.querySelector(".form_2_progessbar");
+    var form_3_progessbar = document.querySelector(".form_3_progessbar");
+
+    var fname = document.getElementById('fname');
+    var lname = document.getElementById('lname');
+    var num = document.getElementById('num');
+    var mail = document.getElementById('mail');
+
+
+    form_1_btns.addEventListener("click", function () {
+
+        if (fname.value === "" || lname.value === "" || num.value === "" || mail.value === "") {
+            alert("All Fiellds Must be filled")
+            return fname;
+        }
+
+        form_1.style.display = "none";
+        form_2.style.display = "block";
+
+        /*   form_1_btns.style.display = "none";
+          form_2_btns.style.display = "flex";
+   */
+        form_2_progessbar.classList.add("active");
+    });
+
+
+    form_2_btns.addEventListener("click", function () {
+        form_2.style.display = "none";
+        form_3.style.display = "block";
+        /* 
+                form_3_btns.style.display = "flex";
+                form_2_btns.style.display = "none";
+         */
+        form_3_progessbar.classList.add("active");
+    });
+
+
+
+    form_3_btns.addEventListener("click", function () {
+        alert("welcome");
+        window.href = "dashboard.html"
+
+        form_3_progessbar.classList.remove("active");
+    });
+
+
+</script>
+
+<script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+</html>
