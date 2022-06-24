@@ -162,16 +162,15 @@ body {
     padding: 30px 20px;
 }
 
+
 ._forgotdetails {
     font-size: 13px;
-
-
 }
 
 
 .login_form label {
 
-    margin-left: 40px;
+    margin-left: 20px;
 
 
 }
@@ -188,6 +187,7 @@ body {
     margin-top: 10px;
     text-shadow: #777777;
     color: red;
+    padding-top: 10px;
 }
 
 .forgot a {
@@ -437,6 +437,7 @@ DAsheboard >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
     width: 100%;
     z-index: 1;
 
+
 }
 
 /*  .nav>div {
@@ -496,6 +497,7 @@ DAsheboard >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .nav_col {
     background-color: white;
+  
     height: 100vh;
     width: 20%;
     flex-grow: 2;
@@ -513,6 +515,7 @@ DAsheboard >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
 }
+
 
 .navigation ul {
     list-style: none;
@@ -1939,11 +1942,11 @@ h4 {
 
     .login_form {
 
-        width: 80%;
+        width: 90%;
         margin: auto;
         margin-top: 50px;
         background-color: white;
-        height: 400px;
+        height: 420px;
         border-radius: 10px;
 
     }
@@ -2240,14 +2243,18 @@ h4 {
 
     .nav_col {
         background-color: white;
+       
         height: 100vh;
-        width: 70%;
+        width: 60%;
         margin-top: 50px;
         flex-grow: 2;
         position: fixed;
         z-index: 1;
         top: 0;
         left: 0;
+        cursor: pointer;
+        transition: ease-in 1s;
+     
 
     }
 
@@ -2310,7 +2317,8 @@ h4 {
     .user_dashboard {
         display: flex;
         flex-direction: column;
-        margin: 0px 0px;
+        margin: 0px;
+    
 
     }
 
@@ -2325,11 +2333,12 @@ h4 {
     .user_dashboard>div {
         margin: 0px;
         padding: 0px;
+        width: 100%;
 
     }
 
     .user_toggle_btn ul {
-        margin: 10px;
+        margin: 10px 0px;
         padding: 0px;
         margin-top: 30px;
     }
@@ -2340,23 +2349,51 @@ h4 {
         text-decoration: none;
         color: green;
         padding: 0px 10px;
+        font-size: 15px;
 
     }
+
+    .user_toggle_btn li a {
+        margin: 0px 5px;
+        text-decoration: none;
+    }
+    
+    .user_toggle_btn li .active {
+        margin: 0px 5px;
+        text-decoration: none;
+        color: red;
+    }
+    
+    .user_toggle_btn li a:focus {
+        margin: 0px 5px;
+        text-decoration: none;
+        color: red;
+    }
+    
+    
+
 
     .user_line {
         border: 1px solid black;
+        display: block;
         width: 98%;
+        margin: auto;
         margin-left: 0px;
     }
 
-
+      .personal_form{
+        width: 100%;
+    }
 
     .personal_form h5 {
         color: #7F7F7F;
     }
 
+    .name_details_mob{
+        display: block;
+    }
     .last_name_det input {
-        width: 70%;
+        width: 90%;
         padding: 10px 10px;
         border: none;
         outline: none;
@@ -2365,7 +2402,8 @@ h4 {
     }
 
     .first_name_det input {
-        width: 75%;
+       
+        width: 90%;
         padding: 10px 10px;
         border: none;
         outline: none;
@@ -2374,7 +2412,7 @@ h4 {
     }
 
     .form_phone_detials input {
-        width: 87%;
+        width: 92%;
         padding: 10px 10px;
         margin: 2px 5px;
         border: none;
@@ -2432,8 +2470,7 @@ h4 {
     }
 
     .profile_image {
-        flex-grow: 10;
-
+        flex-grow: 0;
         width: 100%;
         order: 1;
     }
@@ -2450,7 +2487,6 @@ h4 {
         background: white;
         height: 200px;
         width: 70%;
-
         border-radius: 5px;
         text-align: center;
         margin: 20px auto;
@@ -2471,9 +2507,20 @@ h4 {
     }
 
     .business_set input {
-        width: 90%;
+        width: 87%;
     }
 
+    .business_set_mobile{
+        display: block;
+    }
+    .business_set_mobile input{
+       width: 93%;
+       margin: 5px 10px;
+    }
+
+    .business_set_mobile label{
+        padding-left: 10px;
+    }
     .business_btn_ {
         width: 95%;
     }
@@ -2491,8 +2538,11 @@ h4 {
         width: 100%;
     }
 
+    .pass_mobile{
+        display: block;
+    }
     .password_input input {
-        width: 90%;
+        width: 87%;
         margin-bottom: 20px;
     }
 
