@@ -50,9 +50,7 @@
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-/* * {
-    box-sizing: border-box;
-  } */
+
 body {
     margin: 0px;
     padding: 0px;
@@ -260,8 +258,9 @@ body {
 }
 
 .names {
-    overflow: auto;
-    width: 70%;
+    display: flex;
+    width: 100%;
+
 }
 
 
@@ -278,7 +277,7 @@ body {
     margin: 10px 0px;
     outline: none;
     border-radius: 4px;
-    width: 85%;
+    width: 65%;
     border: none;
 
 }
@@ -377,8 +376,8 @@ Progree Bar */
 /* Password<<<<<<<<<<< */
 
 .passowrd_log {
-    overflow: hidden;
-    width: 70%;
+    display: flex;
+    width: 100%;
 
 }
 
@@ -388,7 +387,7 @@ Progree Bar */
 }
 
 .passowrd_log input {
-    width: 85%;
+    width: 68%;
     padding: 10px 10px;
     outline: none;
     border: none;
@@ -396,16 +395,6 @@ Progree Bar */
     margin: 10px 0px;
 
 }
-
-._password_1 {
-    float: left;
-}
-
-
-._password_2 {
-    float: right;
-}
-
 
 .submit_btn2 {
     background-color: red;
@@ -1937,7 +1926,6 @@ h4 {
 /* MOBILE SCREEN */
 @media screen and (max-width: 480px) {
 
-  
     /* Log In<<<<<< */
     .login_containers h5 {
         color: red;
@@ -1982,13 +1970,34 @@ h4 {
 
     /* .>>>>>>>>>>>>>>>Log In Ends Here */
 
+ 
+    .description {
+        background-color: black;
+        color: white;
+        display: none;
+    }
+
+    .details_group {
+        margin: 0px 0px;
+    }
     .container {
-        display: grid;
-        grid-template-columns: auto auto;
+        display: block;
+        height: 100vh;
+         background-color: aliceblue;
+        
+  
 
     }
 
-
+    .description h5 {
+        background-color: red;
+        width: 10%;
+        text-align: center;
+        padding: 5px 0px;
+        font-size: 30px;
+        border-radius: 5px;
+        margin: 0px 0px;
+    }
     .details_group {
         margin: 0px 0px;
 
@@ -1996,15 +2005,15 @@ h4 {
 
     .details {
         background-color: aliceblue;
-
-
-
+     
     }
 
     .form_details {
 
-        width: 100%;
-        margin: 20px 0px;
+        width: 90%;
+        margin: 0px 0px;
+        padding-top: 30px;
+        margin: auto;
         /* margin-top: ; */
 
     }
@@ -2014,43 +2023,46 @@ h4 {
         text-align: center;
         font-weight: bold;
         color: grey;
+        margin: 0px;
+        padding-bottom: 30px;
+        
 
     }
-
+    .names{
+        display: block;
+        width: 100%;
+    }
     .names label {
-        margin: 0px 30px;
-    }
-
-    .last {
-        padding-left: 100px;
+       
+        margin: 5px 5px;
+        padding: 0px;
     }
 
     .names input {
-        height: 40px;
-        margin: 10px 30px;
+        padding: 10px 10px;
+        margin: 0px 3px;
         outline: none;
         border-radius: 4px;
-        width: 35%;
+        width: 92%;
 
     }
 
     .other_details input {
-        width: 83%;
-        height: 40px;
+        width: 92%;
+     
         outline: none;
-        margin: 0px 30px;
+        margin: 0px 0px;
     }
 
     .other_details label {
         display: block;
-        margin: 10px 30px;
+        margin: 15px 5px;
     }
 
     .submit_btn {
         background-color: red;
-        margin: 40px 30px;
-        width: 85%;
-        height: 50px;
+        margin: 40px 0px;
+        width: 100%;
         outline: none;
         color: white;
         font-weight: bold;
@@ -2077,18 +2089,20 @@ h4 {
     }
 
     .other_details2 input {
-        width: 96%;
-        height: 40px;
+        width: 92%;
         border-radius: 5px;
         outline: none;
-        margin: 0px 5px;
+        margin: 0px 0px;
     }
 
+    .names1_details input{
+        width: 70%;
+    }
     .submit_btn1 {
         background-color: red;
         margin: 40px 0px;
         width: 100%;
-        height: 50px;
+     
         outline: none;
         color: white;
         font-weight: bold;
@@ -2099,9 +2113,8 @@ h4 {
 
     .submit_btn2 {
         background-color: red;
-        margin: 25px 5px;
+        margin: 25px 0px;
         width: 100%;
-        height: 50px;
         outline: none;
         color: white;
         font-weight: bold;
@@ -2109,6 +2122,21 @@ h4 {
         cursor: pointer;
     }
 
+    .passowrd_log  {
+        display: block;
+       
+    }
+
+
+    .passowrd_log input {
+        width: 93%;
+        padding: 10px 10px;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        margin: 10px 0px;
+    
+    }
 
 
 
@@ -2802,7 +2830,7 @@ h4 {
 
 
 
- /* Tablet SCREEN */
+/* Tablet SCREEN */
 /* @media screen and (max-width: 768px) {
 
     body {

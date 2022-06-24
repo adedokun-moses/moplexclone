@@ -49,11 +49,11 @@
                     <form action="" class="form_details form_1">
                         <h5>Personal Details</h5>
                         <div class="names">
-                            <div style="float: left;">
+                            <div>
                                 <label for="">First Name</label><br>
                                 <input type="text" placeholder="Adedokun" id="fname">
                             </div>
-                            <div style="float: right; ">
+                            <div>
                                 <label for="">Last Name</label><br>
                                 <input type="text" placeholder="Moses" id="lname">
 
@@ -76,7 +76,7 @@
 
 
 
-                    <form action="" class="form_details_sign form_2" style="display: none;">
+                    <form action="" class="form_details form_2" style="display: none;">
                         <h5>Business Information</h5>
 
                         <div class="other_details2">
@@ -110,10 +110,10 @@
                             </div>
 
                             <div class="names1_details">
-
-                                <label for="">City</label><br>
+                                <label for="">City</label>
                                 <input type="text" placeholder="Moses">
                             </div>
+
 
 
 
@@ -208,9 +208,9 @@
 
     form_3_btns.addEventListener("click", function () {
         alert("welcome");
-        window.href = "dashboard.html"
+        window.location.href = "index.html"
 
-        form_3_progessbar.classList.remove("active");
+       // form_3_progessbar.classList.remove("active");
     });
 
 

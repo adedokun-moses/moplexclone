@@ -10,63 +10,43 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="description">
-            <h5>m</h5>
+    <div class="login_containers">
+        <h5><span class="m_design">m</span>MORPLEX</h5>
 
-
-            <div class="details_group">
-                <h4>Dealers Sign Up</h4>
-                <p>Personal Details <br> <span class="more_details">Provide Your namea and other details</span> </p>
-                <p>Business Details <br> <span class="more_details">Provide Your namea and other details</span> </p>
-                <p>Set Password <br> <span class="more_details">Provide Your namea and other details</span> </p>
-            </div>
-
-
-        </div>
-        <div class="details">
-
-
-            <form action="" class="form_details">
-                <h5>Personal Details</h5>
-                <div class="names">
-                    <div  style="float: left;" >
-                        <label for="">First Name</label><br>
-                        <input type="text" placeholder="Adedokun">
-                    </div>
-                    <div style="float: right; ">
-                        <label for="">Last Name</label><br>
-                        <input type="text" placeholder="Moses" >
-    
-                    </div>
-                
-                  
-                </div>
-
-                <div class="other_details">
-                    <label for="phonenumber"> Phone Number</label>
-                    <input type="text" placeholder="9092299282">
-                </div>
-                <div  class="other_details">
-                    <label for="phonenumber">Email</label>
-                    <input type="email" placeholder="adedded@gmail.com">
-                </div>
-
-                <input type="button" value="Next" class="submit_btn">
+        <form action="" class="login_form" id="form">
+            <h4>Log In</h4>
+            <input type="text" placeholder="Email/ Decoder serial number" id="decoder">
+            <input type="password" placeholder="Password" id="password">
+            <h3>Forget Password? <span class="pass_" > <a href="forgotpassword.html">Reset</a></span></h3>
+            <button class="login_button" type="submit"  onclick="logIn();">Sign In </button>
+            <h5>Don't have an account? <span  class="pass_"> <a href="signupfm.html">Sign Up</a></span></h5>
 
 
 
-
-
-            </form>
-
-
-        </div>
+        </form>
     </div>
 
 
-
-
 </body>
+
+<script>
+    var  decoder = document.getElementById('decoder');
+    var password = document.getElementById('password');
+/* 
+    document.getElementById('sub').addEventListener('submit' function (e){
+        if (decoder.value =  "" || password.value = ""){
+            alert("Kindly Input Your Password")
+        }
+    }) */
+
+   function logIn(){
+        if (decoder.value ===  "" || password.value === ""){
+            alert("All Field Must Be filled")
+        } else{
+            alert("Welcome ");
+            window.location.href = "dashboard.html"
+        }
+    } 
+</script>
 
 </html>
