@@ -656,6 +656,11 @@ DAsheboard >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
     font-size: 15px;
 
 }
+.balance_details a {
+    text-decoration: none;
+}
+
+
 
 .balance_details h4 {
     padding-top: 15px;
