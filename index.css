@@ -2397,8 +2397,14 @@ h4 {
     .name_details_mob{
         display: block;
     }
+
+    .name_details_mob_ input{
+        width: 30%;
+    }
+
+  
     .last_name_det input {
-        width: 80%;
+        width: 85%;
         padding: 10px 10px;
         border: none;
         outline: none;
@@ -2408,7 +2414,7 @@ h4 {
 
     .first_name_det input {
        
-        width: 80%;
+        width: 85%;
         padding: 10px 10px;
         border: none;
         outline: none;
@@ -2547,7 +2553,7 @@ h4 {
         display: block;
     }
     .password_input input {
-        width: 87%;
+        width: 83%;
         margin-bottom: 20px;
     }
 
