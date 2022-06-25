@@ -1,3 +1,5 @@
+    
+
 /* >>>>>>>>> Drop Down Menu >>>>>>>> */
 .dropdown {
     position: relative;
@@ -497,7 +499,6 @@ DAsheboard >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .nav_col {
     background-color: white;
-  
     height: 100vh;
     width: 20%;
     flex-grow: 2;
@@ -2244,7 +2245,7 @@ h4 {
 
     .nav_col {
         background-color: white;
-       
+        display: none;
         height: 100vh;
         width: 60%;
         margin-top: 50px;
@@ -2719,7 +2720,7 @@ h4 {
 
     .order_ {
         display: block;
-        padding-top: 5px;
+        padding-top: 30px;
 
     }
 
