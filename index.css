@@ -2263,9 +2263,11 @@ h4 {
     .intro h5 {
 
 
+       padding-top: 70px; 
         font-size: 15px;
-        margin: 10px 25px;
-        color: red;
+        margin: 0px 25px;
+       
+     
     }
 
 
