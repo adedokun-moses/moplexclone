@@ -12,13 +12,13 @@
 <body>
     <h1>Hello Vue.</h1>
 
-   
+
     <div id="app">
 
 
-        <div v-if = "showBooks" class="obook">
+        <div v-if="showBooks" class="obook">
             <ul>
-                <li v-for = "book in filteredBooks"  :class ="{ fav: book.isfav}" @click = "changecolor(book)" >
+                <li v-for="book in filteredBooks" :class="{ fav: book.isfav}" @click="changecolor(book)">
                     <img :src="book.img" :alt="book.title">
                     <h3>{{book.title}}</h3>
                     <p>{{ book. author }}</p>
@@ -28,44 +28,44 @@
 
         </div>
 
-        <button @click = "toggleshow">
-            <span v-if ="showBooks">Hide Books</span>
+        <button @click="toggleshow">
+            <span v-if="showBooks">Hide Books</span>
             <span v-else>Show Books</span>
-         <!--    <span v-if ="!showBooks">Show Books</span> -->
+            <!--    <span v-if ="!showBooks">Show Books</span> -->
         </button>
 
 
 
-        <div v-show = "showBooks">Currently showing Books</div>
+        <div v-show="showBooks">Currently showing Books</div>
 
 
-<!-- 
+        <!-- 
         Data Binding -->
 
-       <!--  <a v-bind:href="url">welcome to koboinfo</a> -->
-        
-     <!--    <button v-on:click ="age++">Increase Age</button>
+        <!--  <a v-bind:href="url">welcome to koboinfo</a> -->
+
+        <!--    <button v-on:click ="age++">Increase Age</button>
         <button @click ="age--">Decreacess Age</button>
         <div @click="changeTitle('New title') ">Click Here To Change Ttile</div> -->
 
 
         <br>
-        <div class="box" @mouseover = "handleevent ($event, 5)">1</div>
-        <div class="box" @mouseleave = "handleevent" >2</div>
-        <div class="box" @dblclick ="handleevent">3</div>
-        <div class="box" @mousemove = "handlemousemove" >{{ x }} {{ y }}</div>
-      
+        <div class="box" @mouseover="handleevent ($event, 5)">1</div>
+        <div class="box" @mouseleave="handleevent">2</div>
+        <div class="box" @dblclick="handleevent">3</div>
+        <div class="box" @mousemove="handlemousemove">{{ x }} {{ y }}</div>
+
 
     </div>
 
 
     <style>
-        button{
+        button {
             background: red;
             padding: 10px 10px;
         }
 
-        .box{
+        .box {
             width: 40%;
             margin: auto;
             background: grey;
@@ -74,11 +74,12 @@
             display: inline-block;
             border-radius: 10px;
         }
-        .obook ul{
+
+        .obook ul {
             list-style: none;
         }
 
-        .obook li{
+        .obook li {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -86,12 +87,13 @@
             width: 50%;
             margin: auto;
         }
-        li.fav{
+
+        li.fav {
             background: grey;
             color: white;
             border-radius: 10px;
         }
-    </style> 
+    </style>
 </body>
 <script src="app.js"></script>
 
